@@ -77,7 +77,7 @@ const updateTask = async (req, res, next) => {
     try {
         const task = await Task.findOneAndUpdate(
             { _id: req.params.id, user: req.user.userId }, req.body,
-            { returnDocument: 'after' }
+            { returnDocument: 'after', runValidators: true }
         );
         if (!task) {
             return next(new AppError('Task not found', 404));
