@@ -48,8 +48,8 @@ JWT_SECRET=your_jwt_secret
 
 ## API Documentation
 
-Once the server is running, visit:
-http://localhost:4000/api-docs
+Live swagger docs, visit
+https://task-manager-api-dqfn.onrender.com/api-docs
 
 ---
 
